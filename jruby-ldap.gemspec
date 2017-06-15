@@ -3,14 +3,13 @@ $:.push File.expand_path("../lib", __FILE__)
 require "jruby-ldap/version"
 
 Gem::Specification.new do |s|
-  s.name        = "jruby-ldap"
+  s.name        = "jruby-ldap-patched"
   s.version     = JRuby::LDAP::VERSION
-  s.authors     = ["Ola Bini"]
+  s.authors     = ["Ola Bini", "Peter Souter"]
   s.email       = ["ola.bini@gmail.com"]
-  s.homepage    = "http://jruby-extras.rubyforge.org/jruby-ldap"
-  s.summary     = "Port of Ruby/LDAP to JRuby"
-  s.description = "Port of Ruby/LDAP to JRuby"
-  s.rubyforge_project = "jruby-extras"
+  s.homepage    = "https://github.com/petems/jruby-ldap-patched"
+  s.summary     = "Port of Ruby/LDAP to JRuby, with patch for Puppetserver"
+  s.description = "Port of Ruby/LDAP to JRuby, with patch for Puppetserver"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
